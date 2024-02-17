@@ -1,23 +1,23 @@
-import NextAuth from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
-import { NextApiRequest, NextApiResponse } from "next";
+// import NextAuth from "next-auth";
+// import CredentialsProvider from "next-auth/providers/credentials";
+// import { NextApiRequest, NextApiResponse } from "next";
 
-export default NextAuth({
-  providers: [
-    CredentialsProvider({
-      name: "Credentilas",
-      credentials: {
-        email: {},
-        password: {},
-      },
-      async authorize(credentials, req) {
-        const user = { email: "" };
-        if (user) return user;
-        else return null;
-      },
-    }),
-  ],
-});
+// export default NextAuth({
+//   providers: [
+//     CredentialsProvider({
+//       name: "Credentilas",
+//       credentials: {
+//         email: {},
+//         password: {},
+//       },
+//       async authorize(credentials, req) {
+//         const user = { email: "" };
+//         if (user) return user;
+//         else return null;
+//       },
+//     }),
+//   ],
+// });
 
 // export default async function handler(
 //   req: NextApiRequest,
